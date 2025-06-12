@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parque Nacional La Muralla</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body class="pagina">
+
+  <header class="header">
+    <nav class="header__nav nav">
+      <ul class="nav__menu">
+        <li class="nav__item">
+          <button class="nav__button" onclick="loadSection('inicio')">Inicio</button>
+        </li>
+        <li class="nav__item">
+          <button class="nav__button" onclick="loadSection('quienes')">Quiénes Somos</button>
+        </li>
+        <li class="nav__item">
+          <button class="nav__button" onclick="loadSection('faunayflora')">Fauna y Flora</button>
+        </li>
+
+        <li class="nav__item">
+          <button class="nav__button" onclick="loadSection('reservas')">Reservas</button>
+        </li>
+        <li class="nav__item">
+          <button class="nav__button" onclick="loadSection('reportes')">Reportes</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content" class="contenido-principal">
+    <!-- contenido dinamico -->
+  </main>
+
+  <footer class="footer">
+    <p class="footer__texto">Developed by @Var-Guz GitHub</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
