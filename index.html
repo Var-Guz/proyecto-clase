@@ -8,28 +8,40 @@
 </head>
 <body class="pagina">
 
-  <header class="header">
-    <nav class="header__nav nav">
-      <ul class="nav__menu">
-        <li class="nav__item">
-          <button class="nav__button" onclick="loadSection('inicio')">Inicio</button>
-        </li>
-        <li class="nav__item">
-          <button class="nav__button" onclick="loadSection('quienes')">Quiénes Somos</button>
-        </li>
-        <li class="nav__item">
-          <button class="nav__button" onclick="loadSection('faunayflora')">Fauna y Flora</button>
-        </li>
+<header class="header">
+  <nav class="header__nav nav">
 
-        <li class="nav__item">
-          <button class="nav__button" onclick="loadSection('reservas')">Reservas</button>
-        </li>
-        <li class="nav__item">
-          <button class="nav__button" onclick="loadSection('reportes')">Reportes</button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Menu para pantallas grandes -->
+    <ul class="nav__menu">
+      <li class="nav__item">
+        <button class="nav__button" onclick="loadSection('inicio')">Inicio</button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__button" onclick="loadSection('quienes')">Quiénes Somos</button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__button" onclick="loadSection('faunayflora')">Fauna y Flora</button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__button" onclick="loadSection('reservas')">Reservas</button>
+      </li>
+      <li class="nav__item">
+        <button class="nav__button" onclick="loadSection('reportes')">Reportes</button>
+      </li>
+    </ul>
+
+    <!-- Menu tipo select para pantallas pequeñas -->
+    <select class="nav__select" onchange="loadSection(this.value)">
+      <option value="">Navegar a...</option>
+      <option value="inicio">Inicio</option>
+      <option value="quienes">Quiénes Somos</option>
+      <option value="faunayflora">Fauna y Flora</option>
+      <option value="reservas">Reservas</option>
+      <option value="reportes">Reportes</option>
+    </select>
+
+  </nav>
+</header>
 
   <main id="content" class="contenido-principal">
     <!-- contenido dinamico -->

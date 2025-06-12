@@ -50,6 +50,9 @@ function loadSection(section) {
             <label for="personas">Número de personas:</label>
             <input type="number" id="personas" name="personas" min="1" required>
 
+            <label for="Numero Movil">Número de Movil:</label>
+            <input type="number" id="movil" name="movil" min="8" required>
+
             <button type="submit">Reservar</button>
           </form>
         </section>
