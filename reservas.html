@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parque Nacional La Muralla - Inicio</title>
+  <title>Parque Nacional La Muralla - Reservas</title>
   <link rel="stylesheet" href="styles/main.css" />
 </head>
 <body class="pagina">
@@ -11,7 +11,6 @@
 <header class="header">
   <nav class="header__nav nav">
 
-    <!-- Menú para pantallas grandes -->
     <ul class="nav__menu">
       <li class="nav__item"><a href="index.html" class="nav__button">Inicio</a></li>
       <li class="nav__item"><a href="quienes.html" class="nav__button">Quiénes Somos</a></li>
@@ -20,7 +19,6 @@
       <li class="nav__item"><a href="reportes.html" class="nav__button">Reportes</a></li>
     </ul>
 
-    <!-- Menú tipo select para pantallas pequeñas -->
     <select class="nav__select" onchange="if(this.value) location.href=this.value;">
       <option value="">Navegar a...</option>
       <option value="index.html">Inicio</option>
@@ -34,20 +32,23 @@
 </header>
 
 <main class="contenido-principal">
-  <section class="inicio">
-    <h1 class="inicio__titulo">Parque Nacional La Muralla</h1>
-    <p class="inicio__descripcion">
-      El Parque Nacional La Muralla es un tesoro natural ubicado en el departamento de Olancho, Honduras. 
-      Con una extensión de más de 13,000 hectáreas, este parque protege una de las últimas áreas de bosque nublado del país.
-    </p>
-    <p class="inicio__descripcion">
-      Declarado área protegida en 1993, es hogar de una biodiversidad excepcional, incluyendo especies endémicas y en peligro de extinción. 
-      La Muralla no solo resguarda vida silvestre, sino que también abastece de agua a comunidades cercanas.
-    </p>
-    <p class="inicio__descripcion">
-      Descubre sus senderos, cascadas, miradores y la calidez de las comunidades locales que te invitan a explorar y conservar este patrimonio natural.
-    </p>
-    <img src="images/centro de visitantes.jpg" alt="Vista panorámica del parque" class="inicio__imagen" />
+  <section class="reservas">
+    <h2 class="reservas__titulo">Haz tu Reserva</h2>
+    <form class="reservas__form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="fecha">Fecha de visita:</label>
+      <input type="date" id="fecha" name="fecha" required />
+
+      <label for="personas">Número de personas:</label>
+      <input type="number" id="personas" name="personas" min="1" required />
+
+      <label for="movil">Número de Móvil:</label>
+      <input type="tel" id="movil" name="movil" pattern="[0-9]{8,}" placeholder="Ej: 12345678" required />
+
+      <button type="submit">Reservar</button>
+    </form>
   </section>
 </main>
 
@@ -57,4 +58,3 @@
 
 </body>
 </html>
-
