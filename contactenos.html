@@ -13,6 +13,8 @@
 
 <header class="header">
   <nav class="header__nav nav">
+
+    <!-- Menú para pantallas grandes -->
     <ul class="nav__menu">
       <li class="nav__item"><a href="inicio.html" class="nav__button">Inicio</a></li>
       <li class="nav__item"><a href="quienes.html" class="nav__button">Quiénes Somos</a></li>
@@ -22,6 +24,8 @@
       <li class="nav__item"><a href="contactenos.html" class="nav__button">Contáctenos</a></li>
       <li class="nav__item"><a href="actividades.html" class="nav__button">Actividades</a></li>
     </ul>
+
+    <!-- Menú tipo select para pantallas pequeñas -->
     <select class="nav__select" onchange="if(this.value) location.href=this.value;">
       <option value="">Navegar a...</option>
       <option value="inicio.html">Inicio</option>
