@@ -284,3 +284,181 @@ img {
   width: 80%;
   background: linear-gradient(to right, #00796b, #004d40);
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ===== Bloque: pagina ===== */
+body.pagina {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #2e3a2f;
+  background-color: #f5f9f6;
+}
+
+/* ===== Bloque: header ===== */
+.header {
+  background-color: #2e5f3e;
+  padding: 1rem 2rem;
+}
+
+.header__nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ===== Bloque: nav ===== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {}
+
+.nav__button {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav__button:hover {
+  background-color: #004d40;
+  color: #d0e6d5;
+}
+
+.nav__select {
+  display: none;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* ===== Bloque: contenido-principal ===== */
+.contenido-principal {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.inicio__titulo {
+  font-size: 2.5rem;
+  color: #1e4d2b;
+  margin-bottom: 1rem;
+}
+
+.inicio__descripcion {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.inicio__imagen {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+/* ===== Bloque: footer ===== */
+.footer {
+  background-color: #2e5f3e;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.footer__texto {
+  margin: 0;
+}
+
+/* ===== Responsive nav y contenido ===== */
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__select {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+
+  .contenido-principal {
+    padding: 1rem;
+  }
+
+  .inicio__titulo {
+    font-size: 2rem;
+  }
+}
+
+/* ===== Bloque: contacto ===== */
+.contacto__titulo {
+  font-size: 2rem;
+  color: #1e4d2b;
+  margin-bottom: 1rem;
+}
+
+.contacto__info {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto__mapa {
+  margin: 2rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contacto__form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.contacto__form input,
+.contacto__form textarea,
+.contacto__form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contacto__form button {
+  background-color: #2e5f3e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto__form button:hover {
+  background-color: #1e4d2b;
+}

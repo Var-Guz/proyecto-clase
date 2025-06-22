@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contáctenos - Parque Nacional La Muralla</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="pagina">
+
+<header class="header">
+  <nav class="header__nav nav">
+    <ul class="nav__menu">
+      <li class="nav__item"><a href="index.html" class="nav__button">Inicio</a></li>
+      <li class="nav__item"><a href="quienes.html" class="nav__button">Quiénes Somos</a></li>
+      <li class="nav__item"><a href="faunayflora.html" class="nav__button">Fauna y Flora</a></li>
+      <li class="nav__item"><a href="reservas.html" class="nav__button">Reservas</a></li>
+      <li class="nav__item"><a href="reportes.html" class="nav__button">Reportes</a></li>
+      <li class="nav__item"><a href="contactenos.html" class="nav__button">Contáctenos</a></li>
+    </ul>
+    <select class="nav__select" onchange="if(this.value) location.href=this.value;">
+      <option value="">Navegar a...</option>
+      <option value="index.html">Inicio</option>
+      <option value="quienes.html">Quiénes Somos</option>
+      <option value="faunayflora.html">Fauna y Flora</option>
+      <option value="reservas.html">Reservas</option>
+      <option value="reportes.html">Reportes</option>
+      <option value="contactenos.html">Contáctenos</option>
+    </select>
+  </nav>
+</header>
+
+<main class="contenido-principal contacto" role="main">
+  <h1 class="contacto__titulo">Contáctenos</h1>
+
+  <div class="contacto__info">
+    <p><strong>Ubicación:</strong> Parque Nacional La Muralla, Olancho, Honduras</p>
+    <p><strong>Teléfono:</strong> +504 9999-9999</p>
+    <p><strong>Email:</strong> info@lamuralla.org</p>
+  </div>
+
+  <div class="contacto__mapa">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.347725344591!2d-86.70754608544694!3d15.101874221723704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6e2cc5c7f3c061%3A0xb2062c8417f10e89!2sParque%20Nacional%20La%20Muralla!5e0!3m2!1ses!2shn!4v1625634010112!5m2!1ses!2shn" 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Ubicación del Parque La Muralla"></iframe>
+  </div>
+
+  <form class="contacto__form" aria-label="Formulario de contacto">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</main>
+
+<footer class="footer">
+  <p class="footer__texto">Desarrollado por @Var-Guz - GitHub</p>
+</footer>
+
+</body>
+</html>
